@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/btn_medi"
+        android:layout_width="128dp"
+        android:layout_height="121dp"
+        android:layout_marginEnd="44dp"
+        android:adjustViewBounds="true"
+        android:background="#FFFDFD"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_medimap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_medimap"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/image_3"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/cameraText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="알약 검색"
+        android:textColor="#353535"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/cameraText"
+        app:layout_constraintEnd_toEndOf="@+id/btn_medi"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="@+id/btn_medi"
+        app:layout_constraintTop_toTopOf="@+id/cameraText"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/cameraText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="124dp"
+        android:text="약봉투 검색"
+        android:textColor="#353535"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_medimap"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="@+id/btn_medimap"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <ImageButton
+        android:id="@+id/btn_medimap"
+        android:layout_width="134dp"
+        android:layout_height="116dp"
+        android:layout_marginBottom="12dp"
+        android:adjustViewBounds="true"
+        android:background="#FFFDFD"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/cameraText"
+        app:layout_constraintEnd_toStartOf="@+id/btn_medi"
+        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/free"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="429dp"
+        android:layout_height="257dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="427dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="68dp"
+        android:background="#8BC34A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cameraText">
+
+        <Button
+            android:id="@+id/btn_login2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#8BC34A"
+            android:text="로그인"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.182"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_Sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#8BC34A"
+            android:text="회원가입"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.815"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
